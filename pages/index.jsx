@@ -32,7 +32,9 @@ export default function Home() {
           </div>
 <br />
       <h1 className='bg-red-700 text-white h-10'>SUMAN MALAKAR</h1>
+      <br />
 
+    <h1 className='bg-blue-600 text-white border-l'> Mark Zukenburg</h1>
         
       </main>
     </>
