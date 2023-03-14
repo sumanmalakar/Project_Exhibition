@@ -17,7 +17,7 @@ export default function Home() {
       <main >
        
 
-          <div className="bg-orange-800 h-screen text-white">
+          <div className="bg-orange-800  text-white h-[50vh]">
             <h1>Hello This is NextJS Application</h1>
           </div>
       
