@@ -17,10 +17,10 @@ export default function Home() {
       <main >
        
 
-          <div className="bg-orange-800 h-screen text-white">
+          <div className="bg-orange-800 h-1/2 text-white">
             <h1>Hello This is NextJS Application</h1>
           </div>
-      
+      <div className="bg-blue-800 text-white w-96 justify-center"> vaishnavi</div>
         
       </main>
     </>
