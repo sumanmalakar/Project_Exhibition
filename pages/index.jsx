@@ -29,8 +29,10 @@ export default function Home() {
           <div className=" max-h-full bg-black">
 
       <h1 className='bg-slate-700 text-white'>glady thomas</h1>
-
           </div>
+<br />
+      <h1 className='bg-red-700 text-white h-10'>SUMAN MALAKAR</h1>
+
         
       </main>
     </>
