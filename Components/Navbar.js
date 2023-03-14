@@ -3,7 +3,6 @@ import React from 'react'
 export default function Navbar() {
   return (
     <>
-  
       <ul className="flex justify-center bg-gray-500">
         <li className='p-3 bg-gray-900 text-white '>Home</li>
         <li className='p-3 bg-gray-900 text-white '>About</li>
