@@ -23,7 +23,7 @@ export default function Home() {
           <div className="bg-amber-400 h-8 ">
             <h1>Akanksha</h1>
           </div>
-      
+      <div className="bg-blue-700 h-80 w-96 rounded-2xl">Vaishnavi Nagvanshi</div>
         
       </main>
     </>
