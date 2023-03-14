@@ -25,6 +25,12 @@ export default function Home() {
             <h1>Akanksha</h1>
           </div>
       <div className="bg-blue-700 h-80 w-96 rounded-2xl">Vaishnavi Nagvanshi</div>
+      <br />
+          <div className=" max-h-full bg-black">
+
+      <h1 className='bg-slate-700 text-white'>glady thomas</h1>
+
+          </div>
         
       </main>
     </>
