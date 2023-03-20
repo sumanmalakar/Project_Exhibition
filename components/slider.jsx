@@ -11,7 +11,8 @@ const slider = (
   <AutoplaySlider
     play={true}
     cancelOnInteraction={false} // should stop playing on user interaction
-    interval={100}
+    interval={2000}
+    buttons={true}
   >
     <div data-src="https://i.gadgets360cdn.com/large/noise_colorfit_pro_4_review_main_1659433865849.jpg" />
     <div data-src="https://5.imimg.com/data5/ANDROID/Default/2023/1/SH/SW/KI/135027494/product-jpeg-1000x1000.jpg" />
