@@ -2,6 +2,6 @@
 
 export default function home() {
   return (
-    <div>Suman Malakar</div>
+    <div>Suman Malakar vit </div>
   )
 }

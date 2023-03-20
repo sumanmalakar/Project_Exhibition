@@ -1,6 +1,9 @@
+/* eslint-disable react/jsx-no-undef */
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Slider from  '../components/slider';
+
 
 
 
@@ -17,24 +20,9 @@ export default function Home() {
       </Head>
 
       <main >
+      <Slider/>
 
-          <div className="bg-orange-800  text-white">
-            <h1>Hello This is NextJS Application</h1>
-          </div>
-          <div className="bg-amber-400 ">
-            <h1>Akanksha</h1>
-          </div>
-      <div className="bg-blue-700 h-80 w-96 rounded-2xl">Vaishnavi Nagvanshi</div>
-      <br />
-          <div className=" max-h-full bg-black">
-
-      <h1 className='bg-slate-700 text-white'>glady thomas</h1>
-          </div>
-<br />
-      <h1 className='bg-red-700 text-white h-10'>SUMAN MALAKAR</h1>
-      <br />
-
-    <h1 className='bg-blue-600 text-white border-l'> Mark Zukenburg</h1>
+         
         
       </main>
     </>
