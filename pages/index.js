@@ -20,10 +20,9 @@ export default function Home() {
       </Head>
 
       <main >
-      <Slider/>
+        {/* <div className="container h-40 bg-red-400" ></div> */}
 
-         
-        
+        <Slider/>
       </main>
     </>
   )
