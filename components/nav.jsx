@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-no-undef */
+
 import React from 'react'
 import Link from 'next/link'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { ImSearch } from "react-icons/im";
 import { MdShoppingCart } from "react-icons/md";
 
-// import { ImSearch } from "react-icons";
+
 
 export default function Nav() {
   return (
@@ -24,11 +24,16 @@ export default function Nav() {
         </li>
         <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>Login</li>
         <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>Sing-Up</li>
-        <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>Contact</li>
-        <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>Menu</li>
-        <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>Teams</li>
+        <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>
+          <Link  href="/smartwatch">Smartwatches</Link>
+        </li>
+        <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>
+          <Link href="/smartphone">Smartphones</Link>
+        </li>
+        <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>
+          <Link href="/bluetoothdevice">Bluetooth Devices</Link> 
+            </li>
       </ul>
-      {/* <ImSearch/> */}
       <div className="icon pl-20 pt-4 flex ">
       <Link href="" className='hover:cursor-pointer hover:scale-150 pl-4'><ImSearch/></Link>
       <Link href="" className='hover:cursor-pointer hover:scale-150 pl-4'><MdShoppingCart/></Link>
