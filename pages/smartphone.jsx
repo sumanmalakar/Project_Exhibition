@@ -4,8 +4,8 @@ import React from 'react'
 export default function smartphone() {
   return (
     // <div>smartphone</div>
-    <div className="box flex lg:flex-row justify-center mt-20 md:flex-col">
-    <div class="flex justify-center mr-8 ">
+    <div className="box flex  lg:flex-row justify-center mt-20 sm:flex-col md:flex-col">
+    <div class="flex justify-center m-8 ">
   <div
     class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
@@ -36,7 +36,7 @@ export default function smartphone() {
   </div>
 </div>
 
-<div class="flex justify-center mr-8">
+<div class="flex justify-center  m-8">
   <div
     class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
@@ -67,7 +67,7 @@ export default function smartphone() {
   </div>
 </div>
 
-<div class="flex justify-center">
+<div class="flex justify-center  m-8">
   <div
     class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
