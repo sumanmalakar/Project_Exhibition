@@ -16,7 +16,7 @@ export default function Nav() {
       <div className=' flex justify-center bg-gray-500'>
       <ul className=" flex justify-center ">
         <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>
-          <Link href="/">Mobile</Link>
+          <Link href="/">Home</Link>
           
           </li>
         <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>

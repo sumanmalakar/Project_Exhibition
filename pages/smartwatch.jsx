@@ -4,7 +4,7 @@ import React from 'react'
 export default function smartwatch() {
   return (
     <>
-    <div >smartwatch</div>
+    
     <div className="flex justify-center my-5">
   <div
     className="flex flex-col rounded-lg bg-white shadow-lg dark:bg-neutral-700 md:max-w-xl md:flex-row">
