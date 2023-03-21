@@ -4,7 +4,7 @@ import React from 'react'
 export default function smartphone() {
   return (
     // <div>smartphone</div>
-    <div className="box flex  lg:flex-row justify-center mt-20 sm:flex-col md:flex-col">
+    <div className="box flex flex-col lg:flex-row justify-center mt-20 sm:flex-col md:flex-col">
     <div class="flex justify-center m-8 ">
   <div
     class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
