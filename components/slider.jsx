@@ -6,7 +6,7 @@ import 'react-awesome-slider/dist/styles.css';
 
 export default function slider() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
- const name = "vaishnavi"
+
 const slider = (
   <AutoplaySlider
     play={true}
