@@ -32,13 +32,16 @@ export default function footer() {
               </a><Link href="/boat">Boat</Link> 
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Noise</a>
+            <a className="text-gray-600 hover:text-gray-800"></a>
+            <Link href="/noise">Noise</Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Fastrack</a>
+            <a className="text-gray-600 hover:text-gray-800"></a>
+            <Link href="/fastrack">Fastrack</Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Titan</a>
+            <a className="text-gray-600 hover:text-gray-800"></a>
+            <Link href="/titan">Titan</Link>
           </li>
         </nav>
       </div>
