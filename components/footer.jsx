@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function footer() {
   return (
@@ -27,7 +28,8 @@ export default function footer() {
         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">WATCHES</h2>
         <nav className="list-none mb-10">
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Boat</a>
+            <a className="text-gray-600 hover:text-gray-800">
+              </a><Link href="/boat">Boat</Link> 
           </li>
           <li>
             <a className="text-gray-600 hover:text-gray-800">Noise</a>
