@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 import React from 'react'
 import Link from 'next/link'
 
@@ -11,17 +12,27 @@ export default function footer() {
         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">MOBILES</h2>
         <nav className="list-none mb-10">
           <li>
-            <a className="text-gray-600 hover:text-gray-800">MI</a>
+            <a className="text-gray-600 hover:text-gray-800 ">
+            {/* <Link href="/mi">MI</Link> */}
+
+            </a>
+              <Link className='hover:border-b-2 border-black' href="/mi">MI</Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Samsung</a>
+            <a className="text-gray-600 hover:text-gray-800"></a>
+            <Link className='hover:border-b-2 border-black' href="/samsung">Samsung</Link>
+
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">iphone</a>
+            <a className="text-gray-600 hover:text-gray-800"></a>
+            <Link className='hover:border-b-2 border-black' href="/iphone">iphone</Link>
+
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Nokia</a>
+            <a className="text-gray-600 hover:text-gray-800"></a>
           </li>
+          <Link className='hover:border-b-2 border-black' href="/nokia">Nokia</Link>
+
         </nav>
       </div>
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
