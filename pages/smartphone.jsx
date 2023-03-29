@@ -1,20 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import Link from 'next/link';
 export default function smartphone() {
   return (
     // <div>smartphone</div>
     <div className="box flex flex-col lg:flex-row justify-center mt-20 sm:flex-col md:flex-col">
+  <Link href="/product/123">
     <div class="flex justify-center m-8 ">
   <div
     class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-    <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+   
     <div className='flex justify-center'>
       <img
         class="rounded-t-lg h-[50vh]"
         src="https://cdn.dxomark.com/wp-content/uploads/medias/post-132367/Apple-iPhone-14_Plus_FINAL_featured-image-packshot-review.jpg"
         alt="" />
         </div>
-    </a>
+    
     <div class="p-6">
       <h5
         class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
@@ -34,18 +36,19 @@ export default function smartphone() {
     </div>
   </div>
 </div>
-
+</Link>
+<Link href="/product/123">
 <div class="flex justify-center  m-8">
-  <div
+  <div 
     class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-    <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+   
         <div className='flex justify-center'>
       <img
         class="rounded-t-lg h-[50vh]"
         src="https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/reno8-t-5g-en/middlebanner/reno8-t-5g_640_480.jpg.thumb.webp"
         alt="" />
         </div>
-    </a>
+   
     <div class="p-6">
       <h5
         class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-100">
@@ -64,19 +67,20 @@ export default function smartphone() {
       </button>
     </div>
   </div>
-</div>
+</div></Link>
 
+<Link href="product/123">
 <div class="flex justify-center  m-8">
   <div
     class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-    <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+    
     <div className='flex justify-center'>
       <img
         class="rounded-t-lg h-[50vh]"
         src="https://www.notebookcheck.net/uploads/tx_nbc2/SamsungGalaxyA22__1_.jpg"
         alt="" />
         </div>
-    </a>
+   
     <div class="p-6">
       <h5
         class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
@@ -96,7 +100,7 @@ export default function smartphone() {
     </div>
   </div>
 </div>
-
+</Link>
 </div>
   )
 }

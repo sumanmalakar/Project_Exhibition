@@ -15,8 +15,8 @@ const slider = (
     interval={2000}
     buttons={true}
   >
-    <div data-src="https://i.gadgets360cdn.com/large/noise_colorfit_pro_4_review_main_1659433865849.jpg" />
-    <div data-src="https://5.imimg.com/data5/ANDROID/Default/2023/1/SH/SW/KI/135027494/product-jpeg-1000x1000.jpg" />
+    <div data-src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/G/31/img22/Wireless/Meghana/iQOO/ChangeZ7/NoOffer/NewLaunch/D74387056_WLD---iQOO-Z7-5G--BAU---Design-SIM_1400x800Rev._CB592496396_.jpg" />
+    <div data-src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/G/31/img23/Wireless/ssserene/Larry/GW/23rdMar/D75734134_WLD_OnePlus_Larry_NewLaunch_1400x800new._CB594433967_.jpg" />
     <div data-src="https://cdn.shopify.com/s/files/1/1603/9553/collections/beta_banner_1200x630.png?v=1670065562" />
   </AutoplaySlider>
 );
