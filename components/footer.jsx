@@ -40,19 +40,19 @@ export default function footer() {
         <nav className="list-none mb-10">
           <li>
             <a className="text-gray-600 hover:text-gray-800">
-              </a><Link href="/boat">Boat</Link> 
+              </a><Link className='hover:border-b-2 border-black' href="/boat">Boat</Link> 
           </li>
           <li>
             <a className="text-gray-600 hover:text-gray-800"></a>
-            <Link href="/noise">Noise</Link>
+            <Link className='hover:border-b-2 border-black' href="/noise">Noise</Link>
           </li>
           <li>
             <a className="text-gray-600 hover:text-gray-800"></a>
-            <Link href="/fastrack">Fastrack</Link>
+            <Link className='hover:border-b-2 border-black' href="/fastrack">Fastrack</Link>
           </li>
           <li>
             <a className="text-gray-600 hover:text-gray-800"></a>
-            <Link href="/titan">Titan</Link>
+            <Link className='hover:border-b-2 border-black' href="/titan">Titan</Link>
           </li>
         </nav>
       </div>
