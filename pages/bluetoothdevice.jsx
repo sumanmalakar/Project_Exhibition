@@ -10,8 +10,8 @@ export default function bluetoothdevice() {
     class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
       <img
-        class="rounded-t-lg"
-        src="https://i.insider.com/6334a4ee43e88400185d9d17?width=700"
+        class="rounded-t-lg h-72 bg-center"
+        src="https://cdn.shopify.com/s/files/1/0657/6821/products/BOT-ROCKERZ510FBL-1_240x.jpg?v=1639911961"
         alt="" />
 
     </a>
@@ -39,8 +39,8 @@ export default function bluetoothdevice() {
     class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
       <img
-        class="rounded-t-lg"
-        src="https://i.insider.com/6334a4ee43e88400185d9d17?width=700"
+        className="rounded-t-lg h-72"
+        src="https://cdn.shopify.com/s/files/1/0032/3217/0082/products/640456dcc8c30944292003.jpg?v=1679880234"
         alt="" />
     </a>
     <div class="p-6">
