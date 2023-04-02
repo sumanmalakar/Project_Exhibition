@@ -10,13 +10,13 @@ export default function samsung() {
     <div class="flex justify-center m-7">
 <div
   class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-  <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+  {/* <a href="#!" data-te-ripple-init data-te-ripple-color="light"> */}
     <img
       class="rounded-t-lg"
       src="https://i.insider.com/6334a4ee43e88400185d9d17?width=700"
       alt="" />
 
-  </a>
+  {/* </a> */}
   <div class="p-6">
     <h5
       class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">

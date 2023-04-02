@@ -60,16 +60,20 @@ export default function footer() {
         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">BLUETOOTH DEVICES</h2>
         <nav className="list-none mb-10">
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Headphones</a>
+            <a className="text-gray-600 hover:text-gray-800"></a>
+            <Link className='hover:border-b-2 border-black' href="/headphones">Headphones</Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Speakers</a>
+            <a className="text-gray-600 hover:text-gray-800"></a>
+            <Link className='hover:border-b-2 border-black' href="/speakers">Speakers</Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Earphones</a>
+            <a className="text-gray-600 hover:text-gray-800"></a>
+            <Link className='hover:border-b-2 border-black' href="/earphones">Earphones</Link>
           </li>
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Computer Mouse</a>
+            <a className="text-gray-600 hover:text-gray-800"></a>
+            <Link className='hover:border-b-2 border-black' href="/mouse">Computer Mouse</Link>
           </li>
         </nav>
       </div>
