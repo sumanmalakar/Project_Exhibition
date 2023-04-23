@@ -150,9 +150,32 @@ export default function Nav({
           })}
          
         </ol>
-        <button class="flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-sm">
-          <BsFillBagCheckFill className="m-1" /> 
-        CheckOut</button>
+
+             {/* subTotal */}
+
+             <div className="mt-3 flex  justify-center items-center my-3  ">
+          <span className="font-bold">SubTotal: ₹{subTotal}</span>
+        </div>
+
+        <div className="flex">
+          <Link href={"/checkout"}>
+            {" "}
+            <button class="flex text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm mx-2">
+              <BsFillBagCheckFill className="m-1" />
+              CheckOut
+            </button>
+          </Link>
+
+          <button
+            onClick={clearCart}
+            class="flex text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm mx-2"
+          >
+            Clear Cart
+          </button>
+        </div>
+
+
+       
       </div>
 
 

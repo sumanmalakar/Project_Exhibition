@@ -37,8 +37,8 @@ const Post = ({addToCart}) => {
 
   return (
     <>
-      <section className="text-white body-font overflow-hidden">
-        <div className="container px-5 py-2 mx-auto">
+      <section className="text-gray-600 body-font overflow-hidden">
+        <div className="container px-5 py-24 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <img
               alt="ecommerce"
@@ -46,10 +46,10 @@ const Post = ({addToCart}) => {
               src="https://m.media-amazon.com/images/I/61cCf94xIEL._AC_UY218_.jpg"
             />
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-              <h2 class="text-sm title-font text-white tracking-widest">
+              <h2 class="text-sm title-font text-gray-500 tracking-widest">
                Billion Dollar company!
               </h2>
-              <h1 class="text-white text-3xl title-font font-medium mb-1">
+              <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
                #Billion Dollar Brand
               </h1>
               <div class="flex mb-4">
