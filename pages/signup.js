@@ -1,16 +1,126 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable @next/next/no-img-element */
-
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useRouter } from 'next/router';
+
 
 
 export default function Signup() {
+  const router = useRouter();
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+
+  useEffect(() => {
+    if (localStorage.getItem('token')) {
+      router.push('/');
+    }
+  }, [])
+
+  const handleChange = (e) => {
+    if (e.target.name == 'name') {
+      setName(e.target.value)
+    }
+    else if (e.target.name == 'email') {
+      setEmail(e.target.value)
+    }
+    else if (e.target.name == 'password') {
+      setPassword(e.target.value)
+    } 
+  }
+
+  const handleSubmit = async (e) => {
+   console.log("submited!")
+   
+
+    e.preventDefault();
+    const data = { name, email, password };
+
+    let res = await fetch('/api/signup', {
+      method: 'POST', // or 'PUT'
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    let response = await res.json()
+    console.log(response);
+  
+
+if(response.userExist){
+  toast.warn(response.msg, {
+    position: "top-center",
+    autoClose: 1000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+  });
+} else if(response.success){
+
+    toast.success('Your account has been created...!', {
+      position: "top-center",
+      autoClose: 1000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+
+  setTimeout(() => {
+    router.push('/login');
+
+  }, 2000);
+
+
+
+} else {
+  toast.error(response.error, {
+    position: "top-center",
+    autoClose: 1000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+  });
+}
+
+     
+  } 
+
+  
+
+
+
   return (
     <>
-     
-      <div className="">
+      <ToastContainer
+        position="top-center"
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
+      <div className="pt-[4rem] sm:pt-5 lg:pt-9">
         <section className="bg-gray-50 dark:bg-pink-900">
-          <div className="flex flex-col items-center justify-center px-6  mx-auto md:h-screen lg:py-0">
+          <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
             <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
               <img className="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo" />
               NextJS E-Commerce
@@ -23,14 +133,15 @@ export default function Signup() {
 
 
                 <form
-              
+                  onSubmit={handleSubmit}
                   className="space-y-4 md:space-y-6"
                   method="POST">
 
                   <div>
                     <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>
                     <input
-                    
+                      value={name}
+                      onChange={handleChange}
                       type="name"
                       name="name"
                       id="name"
@@ -42,7 +153,8 @@ export default function Signup() {
                   <div>
                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                     <input
-                     
+                      value={email}
+                      onChange={handleChange}
                       type="email"
                       name="email"
                       id="email"
@@ -51,7 +163,8 @@ export default function Signup() {
                   <div>
                     <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
                     <input
-                  
+                      value={password}
+                      onChange={handleChange}
                       name="password"
                       type="password"
                       id="password"
