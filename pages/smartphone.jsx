@@ -13,7 +13,9 @@ export default function smartphones({ products }) {
 {/*    
    <div className="box flex flex-col lg:flex-row justify-center mt-20 sm:flex-col md:flex-col"> */}
 
-<div className="flex flex-wrap mt-4 justify-center">
+{/* <div className="flex flex-wrap mt-4 justify-center"> */}
+<div className="grid grid-cols-3 gap-3">
+
 
             {Object.keys(products).length === 0 && <h1>Sorry all the smartphones are out of stock new are comming soon..</h1>}
             {Object.keys(products).map((item) => {
