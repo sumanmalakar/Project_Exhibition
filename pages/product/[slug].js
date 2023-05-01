@@ -92,11 +92,11 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
               src={product.img}
             />
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 text-white">
-              <h1 className="text-sm title-font text-gray-500 tracking-widest text-white">
+              {/* <h1 className="text-sm title-font text-gray-500 tracking-widest">
                 NextJs Modern E-Commerce Application!
               </h1>
-              <br />
-              <h1 className="text-gray-900 text-4xl title-font font-medium mb-1 text-white">
+              <br /> */}
+              <h1 className="text-white text-4xl title-font font-medium mb-1">
                 {product.title} ({product.size}/{product.color})
               </h1>
               <br />
@@ -108,7 +108,7 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
 
                 {product.color && (<div className="text-2xl">
                   <span className="mr-4 font-bold">Color</span>
-                  <button type="button" class={`text-white bg-${product.color}-700   font-medium rounded-full text-sm px-5 py-2 text-center mb-2 `}>{product.color}</button>
+                  <button type="button" class={`text-white bg-${product.color}-700 hover:bg-${product.color}-800 focus:outline-none focus:ring-4 focus:ring-${product.color}-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-${product.color}-600 dark:hover:bg-${product.color}-700 dark:focus:ring-${product.color}-800 `}>{product.color}</button>
 
                 </div>)}
 
@@ -220,7 +220,7 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
 
               </div>
               <div className="flex ">
-                <span className="title-font font-medium text-2xl text-gray-900 text-white">
+                <span className="title-font font-medium text-2xl  text-white">
                   ₹{product.price}
                 </span>
 
