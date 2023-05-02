@@ -4,8 +4,8 @@ import '../styles/globals.css'
 import Navbar from '../components/nav.jsx'
 import Footer from '../components/footer.jsx'
 import { useState, useEffect } from 'react'
-import { ToastContainer, toast } from 'react-toastify';
-import LoadingBar from 'react-top-loading-bar'
+// import { ToastContainer, toast } from 'react-toastify';
+// import LoadingBar from 'react-top-loading-bar'
 
 
 

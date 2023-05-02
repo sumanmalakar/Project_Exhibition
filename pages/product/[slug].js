@@ -103,7 +103,7 @@ const Post = ({buyNow, addToCart, product, variants }) => {
               <p className="leading-relaxed">
                 {product.desc}
               </p>
-              <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+              {/* <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
                 <div className="flex">
                   <span className="mr-3">Color</span>
                   <button className="border-2 border-gray-300 rounded-full w-6 h-6 focus:outline-none"></button>
@@ -134,7 +134,7 @@ const Post = ({buyNow, addToCart, product, variants }) => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="flex">
                 <span className="title-font font-medium text-2xl text-gray-900">
                   ₹{product.price}
@@ -200,22 +200,11 @@ export async function getServerSideProps(context) {
     await mongoose.connect(process.env.MONGO_URI);
   }
   let product = await Product.findOne({ slug: context.query.slug });
-  let variants = await Product.find({ title: product.title, category: product.category  })
-  let colorSizeSlug = {} // {red: {XL:{slug:'wear-the-code-xl'}}}
-
-  for (let item of variants) {
-    if (Object.keys(colorSizeSlug).includes(item.color)) {
-      colorSizeSlug[item.color][item.size] = { slug: item.slug }
-    } else {
-      colorSizeSlug[item.color] = {}
-      colorSizeSlug[item.color][item.size] = { slug: item.slug }
-    }
-  }
-  // console.log(products)
+  
   return {
     props: {
-      product: JSON.parse(JSON.stringify(product)),
-      variants: JSON.parse(JSON.stringify(colorSizeSlug))
+      product: JSON.parse(JSON.stringify(product))
+      
     }, // will be passed to the page component as props
   };
 }
