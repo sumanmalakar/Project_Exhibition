@@ -5,7 +5,7 @@ import Link from "next/link";
 import Product from "../models/Product";
 import mongoose from "mongoose";
 
-export default function smartphones({ products }) {
+export default function smartphone({ products }) {
   return (
     <>
     <div className="container">
@@ -13,7 +13,9 @@ export default function smartphones({ products }) {
 {/*    
    <div className="box flex flex-col lg:flex-row justify-center mt-20 sm:flex-col md:flex-col"> */}
 
-<div className="flex flex-wrap mt-4 justify-center">
+{/* <div className="flex flex-wrap mt-4 justify-center"> */}
+<div className="grid grid-cols-3 gap-3 mt-4">
+
 
             {Object.keys(products).length === 0 && <h1>Sorry all the smartphones are out of stock new are comming soon..</h1>}
             {Object.keys(products).map((item) => {
@@ -27,21 +29,21 @@ export default function smartphones({ products }) {
                       className="block relative  rounded overflow-hidden "
                     >
                   <div
-                    class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                    class="block max-w-sm rounded-lg bg-pink-700 shadow-lg dark:bg-neutral-700">
                    
-                    <div className='flex justify-center'>
+                    <div className='flex justify-center pt-3'>
                       <img
                         class="rounded-t-lg h-[50vh]"
                         src={products[item].img}
                         alt="" />
                         </div>
                     
-                    <div class="p-6">
+                    <div class="p-6 text-white">
                       <h5
-                        class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                        class="mb-2 text-xl font-medium leading-tight  ">
                         {products[item].title}
                       </h5>
-                      <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                      <p class="mb-4 text-base  ">
                       {products[item].desc}
                       </p>
                       {/* <h1>{products[item].ram}</h1> */}

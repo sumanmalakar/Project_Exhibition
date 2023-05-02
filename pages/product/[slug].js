@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Post = ({buyNow, addToCart, product, variants }) => {
+const Post = ({ buyNow, addToCart, product, variants }) => {
 
 
   // console.log(product, variants);
@@ -20,8 +20,8 @@ const Post = ({buyNow, addToCart, product, variants }) => {
   const [service, setService] = useState();
 
   const checkServiceability = async (e) => {
- 
-  
+
+
 
     e.preventDefault();
     // let pins = await fetch('http://localhost:3000/api/pincode')
@@ -72,7 +72,7 @@ const Post = ({buyNow, addToCart, product, variants }) => {
   return (
     <>
       <section className="text-gray-600 body-font overflow-hidden">
-        <ToastContainer 
+        <ToastContainer
           position="top-right"
           autoClose={5000}
           hideProgressBar={false}
@@ -83,66 +83,150 @@ const Post = ({buyNow, addToCart, product, variants }) => {
           draggable
           pauseOnHover
           theme="dark"
-         />
-        <div className="container px-5 py-24 mx-auto">
-          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+        />
+        <div className="container px-5 py-4 mx-auto ">
+          <div className="lg:w-4/5 mx-auto flex flex-wrap ">
             <img
               alt="ecommerce"
-              className="m-auto   h-[30vh] md:h-[36h] block"
+              className="m-auto   h-[60vh] md:h-[36h] block"
               src={product.img}
             />
-            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-              <h2 className="text-sm title-font text-gray-500 tracking-widest">
-                Billion Dollar company!
-              </h2>
-              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
+            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 text-white">
+              {/* <h1 className="text-sm title-font text-gray-500 tracking-widest">
+                NextJs Modern E-Commerce Application!
+              </h1>
+              <br /> */}
+              <h1 className="text-white text-4xl title-font font-medium mb-1">
                 {product.title} ({product.size}/{product.color})
               </h1>
-
+              <br />
 
               <p className="leading-relaxed">
                 {product.desc}
               </p>
-              {/* <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
-                <div className="flex">
-                  <span className="mr-3">Color</span>
-                  <button className="border-2 border-gray-300 rounded-full w-6 h-6 focus:outline-none"></button>
-                  <button className="border-2 border-gray-300 ml-1 bg-gray-700 rounded-full w-6 h-6 focus:outline-none"></button>
-                  <button className="border-2 border-gray-300 ml-1 bg-pink-500 rounded-full w-6 h-6 focus:outline-none"></button>
-                </div>
-                <div className="flex ml-6 items-center">
-                  <span className="mr-3">Size</span>
-                  <div className="relative">
-                    <select className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-pink-200 focus:border-pink-500 text-base pl-3 pr-10">
-                      <option>SM</option>
-                      <option>M</option>
-                      <option>L</option>
-                      <option>XL</option>
-                    </select>
-                    <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        className="w-4 h-4"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M6 9l6 6 6-6"></path>
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-              </div> */}
-              <div className="flex">
-                <span className="title-font font-medium text-2xl text-gray-900">
+              <div className=" mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+
+                {product.color && (<div className="text-2xl">
+                  <span className="mr-4 font-bold">Color</span>
+                  <button type="button" class={`text-white bg-${product.color}-700 hover:bg-${product.color}-800 focus:outline-none focus:ring-4 focus:ring-${product.color}-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-${product.color}-600 dark:hover:bg-${product.color}-700 dark:focus:ring-${product.color}-800 `}>{product.color}</button>
+
+                </div>)}
+
+                {
+                  product.ScreenSize && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">Screen-Size :- </span>
+                      {product.ScreenSize}
+                    </div>
+                  )
+                }
+                {
+                  product.Storage && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">Storage :- </span>
+                      {product.Storage}
+                    </div>
+                  )
+                }
+                {
+                  product.ram && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">RAM :- </span>
+                      {product.ram}
+                    </div>
+                  )
+                }
+
+
+                {
+                  product.processor && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">Processor :- </span>
+                      {product.processor}
+                    </div>
+                  )
+                }
+                {
+                  product.battery && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">Battery :- </span>
+                      {product.battery}
+                    </div>
+                  )
+                }
+
+                {
+                  product.cellularTechnology && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">Cellular-technology :- </span>
+                      {product.cellularTechnology}
+                    </div>
+                  )
+                }
+
+                {
+                  product.Touchscreen && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">Touchscreen :- </span>
+                      {product.Touchscreen}
+                    </div>
+                  )
+                }
+
+                {
+                  product.DialColor && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">DialColor :- </span>
+                      {product.DialColor}
+                    </div>
+                  )
+                }
+
+
+
+                {
+                  product.DialShape && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">DialShape :- </span>
+                      {product.DialShape}
+                    </div>
+                  )
+                }
+                {
+                  product.StrapColor && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">StrapColor :- </span>
+                      {product.StrapColor}
+                    </div>
+                  )
+                }
+
+                {
+                  product.StrapMaterial && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">StrapMaterial :- </span>
+                      {product.StrapMaterial}
+                    </div>
+                  )
+                }
+
+
+
+
+
+
+
+
+
+              </div>
+              <div className="flex ">
+                <span className="title-font font-medium text-2xl  text-white">
                   ₹{product.price}
                 </span>
 
-                <button 
-                  onClick={() => { buyNow(slug, 1, product.price, product.title, product.size, product.color)}}
-                 className=" flex ml-8 text-white bg-pink-500 border-0 py-2 px-2 md:px-6 focus:outline-none hover:bg-pink-600 rounded">
+                <button
+                  onClick={() => { buyNow(slug, 1, product.price, product.title, product.size, product.color) }}
+                  className=" flex ml-8 text-white bg-pink-500 border-0 py-2 px-2 md:px-6 focus:outline-none hover:bg-pink-600 rounded">
                   Buy Now
                 </button>
 
@@ -153,7 +237,7 @@ const Post = ({buyNow, addToCart, product, variants }) => {
                 </button>
 
 
-            
+
 
               </div>
 
@@ -200,11 +284,11 @@ export async function getServerSideProps(context) {
     await mongoose.connect(process.env.MONGO_URI);
   }
   let product = await Product.findOne({ slug: context.query.slug });
-  
+
+  // console.log(products)
   return {
     props: {
-      product: JSON.parse(JSON.stringify(product))
-      
+      product: JSON.parse(JSON.stringify(product)),
     }, // will be passed to the page component as props
   };
 }
