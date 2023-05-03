@@ -210,11 +210,50 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
                   )
                 }
 
+                {
+                  product.ProcessorBrand && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">ProcessorBrand :- </span>
+                      {product.ProcessorBrand}
+                    </div>
+                  )
+                }
 
+                {
+                  product.ProcessorName && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">ProcessorName :- </span>
+                      {product.ProcessorName}
+                    </div>
+                  )
+                }
 
+                {
+                  product.SSDCapacity && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">SSDCapacity :- </span>
+                      {product.SSDCapacity}
+                    </div>
+                  )
+                }
 
+                {
+                  product.RAM && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">RAM :- </span>
+                      {product.RAM}
+                    </div>
+                  )
+                }
 
-
+                {
+                  product.BatteryBackup && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">BatteryBackup :- </span>
+                      {product.BatteryBackup}
+                    </div>
+                  )
+                }
 
 
 

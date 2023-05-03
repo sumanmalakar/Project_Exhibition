@@ -297,9 +297,9 @@ export default function Nav({
           <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>
            Smartphones
           </li></Link>
-          <Link href={"/bluetoothdevice"}>
+          <Link href={"/laptop"}>
           <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>
-            Bluetooth Devices
+            Laptops
           </li></Link> 
       </ul>
         </div>
