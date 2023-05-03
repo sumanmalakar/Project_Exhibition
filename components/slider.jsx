@@ -5,15 +5,16 @@ import { RxDotFilled } from 'react-icons/rx';
 function Slider() {
   const slides = [
     {
-      url: 'https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T2/images/G/31/img22/Laptops/D24645474_IN_PC-Gamezone-Re-Vamp_1500x300_2.jpg',
-    },
-    {
       url: 'https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T2/images/G/31/img22/Laptops/MSI/Shop_Now_1500-x-300.jpg',
     },
     {
       url: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/G/31/img22/Wireless/Meghana/iQOO/ChangeZ7/NoOffer/NewLaunch/D74387056_WLD---iQOO-Z7-5G--BAU---Design-SIM_1400x800Rev._CB592496396_.jpg',
     },
-
+    
+    {
+      url: 'https://rukminim1.flixcart.com/fk-p-flap/844/140/image/982f877988b6f7a2.jpg?q=50',
+    },
+    
     {
       url: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/G/31/img22/Wireless/tsabikhi/Itel-P40/GW/D75987963_INWLD_ItelP40_NewLaunch_1400x800_2._CB594490935_.jpg',
     },

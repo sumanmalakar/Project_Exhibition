@@ -287,7 +287,7 @@ export default function Nav({
 
           </li> 
            <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>
-            <Link href={"/about"}>About </Link>
+            <Link href={"/bluetoothdevice"}>Bluetooth Devices </Link>
           </li> 
            <Link href={"/smartwatch"}>
           <li className='p-3  text-black hover:bg-black hover:text-white hover:cursor-pointer'>

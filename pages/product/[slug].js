@@ -255,6 +255,24 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
                   )
                 }
 
+{
+                  product.BatteryCapacity && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">BatteryCapacity :- </span>
+                      {product.BatteryCapacity}
+                    </div>
+                  )
+                }
+
+{
+                  product.ChargingTime && (
+                    <div className="text-2xl">
+                      <span className="mr-4 font-bold">ChargingTime :- </span>
+                      {product.ChargingTime}
+                    </div>
+                  )
+                }
+
 
 
               </div>
